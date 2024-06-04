@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Web Pertama</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./Asset/foto/RVC3G.png" alt="RVC3G" class="logo-img">
+            <h1 class="logo-title">RVC3G</h1>
+        </div>        
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="" onclick="redirMail()">Contact</a></li>
+            </ul>
+        </nav>
+        <button 
+        class="btn-cta" onclick="redirInstagram()">Follow</button>
+    </header>
+    <div class="container">
+        <div class="intro">
+            <img src="./Asset/foto/Pasfoto_3x4.jpg" alt="Foto Roy Vidia Chuanta" class="img-foto"/>
+            <p class="title">Hello, Roy Vidia Chuanta!</p>
+            <p class="description">Book Enthusiast, Technology Enthusiast, Gamer from Indonesia.</p>
+        </div>
+    </div>
+    <div class="parallax">
+        <div class="preview" id="about">
+            <p class="preview-txt">Saya adalah Web Developer.</p>
+            <p class="preview-txt2">Niat aja dulu, kemudian belajar.</p>
+            <div class="btn-mt15">
+                <button class="btn-cta2" onclick="redirWhatsApp()">Mari Kerjasama</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="cards">
+                <div class="cards-item">
+                    <img src="./Asset/icon/Books.png" alt="Reading Books" class="icons">
+                    <p class="card-title">Reading Books</p>
+                    <p class="card-description">Membaca buku bisa memperluas pengetahuan dan menambah ilmu pengetahuan.</p>
+                </div>
+                <div class="cards-item">
+                    <img src="./Asset/icon/Gaming.png" alt="Gaming" class="icons">
+                    <p class="card-title">Gaming</p>
+                    <p class="card-description">Bermain game untuk mengisi waktu luang.</p>
+                </div>
+                <div class="cards-item">
+                    <img src="./Asset/icon/WatchingAnime.png" alt="Watching Anime" class="icons">
+                    <p class="card-title">Nonton Anime</p>
+                    <p class="card-description">Mencari hiburan dari animasi yang disajikan oleh anime.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; Roy Vidia Chuanta Website 2024</p>
+    </footer>
+    <script>
+        function redirInstagram(){
+            window.location.href="https://instagram.com/rvc3g"
+        }
+
+        function redirWhatsApp(){
+            window.location.href="https://wa.me/6281226693289"
+        }
+
+        function redirMail(){
+            window.location.href="mailto:rvidiachuanta@gmail.com"
+        }
+    </script>
+</body>
+</html>

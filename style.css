@@ -1,0 +1,271 @@
+*, html, body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    scroll-behavior: smooth;
+}
+
+header{
+    background: #3e362e;
+    color: #a69080;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo{
+    margin-right: auto;
+    display: flex;
+    gap: 0px;
+}
+
+.logo-img{
+    width: 40px;
+    height: 40px;
+    padding: auto;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.logo-title{
+    cursor: pointer;
+    transition: all .3s ease 0s;
+}
+
+.logo:hover{
+    color: #865d36;
+    transform: rotate(2deg);
+}
+
+nav ul{
+    display: flex;
+    padding: 12px;
+}
+
+ul li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+ul li a{
+    color: #a69080;
+    text-decoration: none;
+    transition: all .3s ease 0s;
+    display: inline-block;
+}
+
+ul li a:hover{
+    color: #865d36; 
+    transform: rotate(2deg);
+}
+
+.btn-cta{
+    margin-right: 10px;
+    border: none;
+    font-size: 18px;
+    padding: 6px 12px;
+    background: #93785b;
+    color: #3e362e;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+
+.btn-cta2{
+    margin-right: 10px;
+    border: none;
+    font-size: 18px;
+    padding: 6px 12px;
+    background: #93785b;
+    color: #3e362e;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+
+.btn-cta:hover{
+    color: #865d36; 
+}
+
+.btn-cta2:hover{
+    color: #865d36; 
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.img-foto{
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.title{
+    font-size: 28px;
+    font-weight: bolder;
+    color: #3e362e;
+}
+
+.description{
+    font-size: 20px;
+    color: #3e362e;
+}
+
+.parallax{
+    background-image: url(./Asset/foto/brownn-background.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 115vh;
+}
+
+.preview{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #3e362e;
+    padding: 20px;
+}
+
+.preview-txt{
+    color: #a69080;
+    padding: auto;
+    font-size: 24px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.preview-txt2{
+    color: #a69080;
+    padding: auto;
+    font-size: 24px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.btn-mt15{
+    margin-top: 15px;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: -40px;
+}
+
+.cards-item{
+    background: #3e362e;
+    color: #a69080;
+    padding: 25px;
+    min-height: 200px;
+    max-height: 300px;
+    width: 25%;
+    box-shadow: 2px 2px 2px 2px rgba(0, 3, 3, .5);
+    text-align: center;;
+}
+
+.icons{
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-title{
+    text-align: center;
+    font-weight: bolder;
+}
+
+.card-description{
+    text-align: center;
+    margin-top: 10px;
+}
+
+footer{
+    padding: 20px;
+    text-align: center;
+    background: #3e362e;
+    color: #a69080;
+}
+
+@media screen and (max-width: 500px){
+    .logo{
+        align-items: center;
+        justify-content: center;
+        /* margin-right: 8px; */
+        margin-top:
+        12px;
+        margin-bottom: 12px;
+    }
+
+    .btn-cta{
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+
+    header{
+        display: flex;
+    }
+
+    nav{
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        background: #3e362e;
+        z-index: 9;
+    }
+
+    nav ul{
+        align-items: center;
+        justify-content: center;;
+    }
+
+    .intro{
+        margin: 20px 0px 20px 0px;
+    }
+
+    .cards{
+        flex-direction: column;
+        margin-top: 10px;
+        gap: 10px;
+    }
+
+    .cards-item{
+        width: 50%;
+        opacity: 0.6;
+    }
+
+    .container{
+        padding: 0px;width: 100%;
+    }
+
+    .img-foto{
+        width: 100px;
+    }
+
+    footer{
+        margin-bottom:61px;
+    }
+}
